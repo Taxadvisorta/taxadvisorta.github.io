@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Email Test</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h2 { text-align: center; color: #333; margin-bottom: 20px; }
+        input, textarea, button {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #1f8a70;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover { background-color: #176b57; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>📧 Test Email Form</h2>
+        
+        <!-- FormSubmit.co Configuration -->
+        <form action="https://formsubmit.co/shinemohammedphotography@gmail.com" method="POST">
+            
+            <!-- HIDDEN SETTINGS -->
+            <input type="hidden" name="_subject" value="📩 New Test from Simple HTML Page">
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Optional: Redirect back to this page or a 'thank you' page -->
+            <!-- <input type="hidden" name="_next" value="https://google.com"> -->
+
+            <!-- FIELDS -->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Write a message..." required></textarea>
+            
+            <button type="submit">Send Now</button>
+        </form>
+        
+        <p style="text-align: center; font-size: 12px; color: #666; margin-top: 10px;">
+            Uses FormSubmit.co. Check Spam folder for activation email if this is your first time.
+        </p>
+    </div>
+
+</body>
+</html>
