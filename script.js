@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('themeToggle');
     const themeLabel = document.getElementById('themeLabel');
     const html = document.documentElement;
-    const savedTheme = localStorage.getItem('taxadvisor-theme') || 'dark';
+    const savedTheme = localStorage.getItem('taxadvisor-theme') || 'light';
     html.setAttribute('data-theme', savedTheme);
     themeLabel.textContent = savedTheme === 'dark' ? 'Dark' : 'Light';
 
